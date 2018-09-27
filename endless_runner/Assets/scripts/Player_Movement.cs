@@ -2,18 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour {
     [SerializeField]float Speed;
-    bool crash = false;
-    bool controllable = true;
-	// Use this for initialization
-	void Start () {
+    [SerializeField]float score = 0;
+    [SerializeField] Text scoretext;
+    private bool crash = false;
+    private bool controllable = true;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        score=score + 0.01f;
+        scoretext.text = "score: " + score.ToString("f0");
         if (controllable && Input.GetKey(KeyCode.W)) transform.Translate(Vector3.up * 4 * Time.deltaTime, Space.World);
         if (controllable && Input.GetKey(KeyCode.S)) transform.Translate(Vector3.down * 4 * Time.deltaTime, Space.World);
 
