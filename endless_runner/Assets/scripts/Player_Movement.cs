@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour {
-    [SerializeField]float Speed;
+    
     [SerializeField]float score = 0;
     [SerializeField] Text scoretext;
     private bool crash = false;
@@ -36,6 +36,11 @@ public class Player_Movement : MonoBehaviour {
         {
             crash = true;
             StartCoroutine(Wait());
+        }
+        if (collision.gameObject.tag == "coin")
+        {
+            score = score + 10;
+            Destroy(collision.gameObject);
         }
 
     }

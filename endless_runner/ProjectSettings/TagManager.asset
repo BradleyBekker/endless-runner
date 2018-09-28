@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - hostile
+  - coin
   layers:
   - Default
   - TransparentFX
