@@ -31,7 +31,6 @@ public class Player_Movement : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("COLLISION");
         if (collision.gameObject.tag == "hostile")
         {
             crash = true;
@@ -51,6 +50,11 @@ public class Player_Movement : MonoBehaviour {
         SceneManager.LoadScene(1);
 
     }
+    public float GetScore()
+    {
+        return score;
+    }
+
 
 
 }
