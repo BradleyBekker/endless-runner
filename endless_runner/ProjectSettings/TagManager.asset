@@ -6,6 +6,8 @@ TagManager:
   tags:
   - hostile
   - coin
+  - barriertop
+  - barrierbottom
   layers:
   - Default
   - TransparentFX

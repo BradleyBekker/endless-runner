@@ -40,6 +40,16 @@ public class Player_Movement : MonoBehaviour {
         {
             score = score + 10;
             Destroy(collision.gameObject);
+
+        }
+        if (collision.gameObject.tag == "barrierbottom")
+        {
+            print("bottom barrier");
+            transform.position = new Vector2(transform.position.x,-3.31f);
+        }
+        if (collision.gameObject.tag == "barriertop")
+        {
+            transform.position = new Vector2(transform.position.x, 5.31f);
         }
 
     }

@@ -29,9 +29,9 @@ public class Spawners : MonoBehaviour {
         {
 
 
-            Instantiate(bird, new Vector3(10, Random.Range(-5, 5), 0), Quaternion.identity);
-            if (player.GetComponent<Player_Movement>().GetScore() >= 60) Instantiate(bird, new Vector3(10, Random.Range(-5, 5), 0), Quaternion.identity);
-            if (Random.Range(0,2) == 1)Instantiate(coin, new Vector3(10, Random.Range(-4.5f, 5), 0), Quaternion.identity);
+            Instantiate(bird, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
+            if (player.GetComponent<Player_Movement>().GetScore() >= 60) Instantiate(bird, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
+            if (Random.Range(0,2) == 1)Instantiate(coin, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
             timer = 0;
             
 
