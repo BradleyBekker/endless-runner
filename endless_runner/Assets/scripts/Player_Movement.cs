@@ -42,9 +42,10 @@ public class Player_Movement : MonoBehaviour {
         {
             if (shielded)
             {
+                shield.SetActive(false);
                 Destroy(collision.gameObject);
                 shielded = false;
-                shield.SetActive(false);
+                
 
             }
             else
