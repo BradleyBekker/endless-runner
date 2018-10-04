@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114205447390569722}
   - component: {fileID: 61243137225109082}
   - component: {fileID: 50535473334881858}
+  - component: {fileID: 70558091353059334}
   m_Layer: 0
   m_Name: Hostile_Bird
   m_TagString: hostile
@@ -69,7 +70,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1148622303331486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -88,6 +89,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.359457, y: 0.97357273}
   m_EdgeRadius: 0
+--- !u!70 &70558091353059334
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148622303331486}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000005638366, y: 0.04729805}
+  m_Size: {x: 2.3700004, y: 0.6962152}
+  m_Direction: 1
 --- !u!114 &114205447390569722
 MonoBehaviour:
   m_ObjectHideFlags: 1
