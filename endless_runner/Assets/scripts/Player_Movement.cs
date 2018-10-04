@@ -24,6 +24,7 @@ public class Player_Movement : MonoBehaviour {
 
         if (crash) {
             controllable = false;
+            transform.Rotate(new Vector3 (0,0,1),-30);
             transform.Translate(new Vector2(2, -2) * 4 * Time.deltaTime, Space.World);
         }
 
