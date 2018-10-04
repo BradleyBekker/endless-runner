@@ -5,7 +5,9 @@ using UnityEngine;
 public class Spawners : MonoBehaviour {
    [SerializeField] private GameObject bird;
    [SerializeField] private GameObject coin;
-    [SerializeField] private GameObject player;
+   [SerializeField] private GameObject player;
+    [SerializeField] private GameObject shield;
+
     private float timer =  0;
    private float spawntime = 75;
 
@@ -28,13 +30,18 @@ public class Spawners : MonoBehaviour {
         if (timer >= spawntime)
         {
 
-
+            //spawns birds
             Instantiate(bird, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
             if (player.GetComponent<Player_Movement>().GetScore() >= 60) Instantiate(bird, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
+            if (player.GetComponent<Player_Movement>().GetScore() >= 130) Instantiate(bird, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
+            //spawns coins
             if (Random.Range(0,2) == 1)Instantiate(coin, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
-            timer = 0;
-            
 
+            //spawns shields
+            if (Random.Range(0, 10) == 1) Instantiate(shield, new Vector3(10, Random.Range(-3.5f, 5), 0), Quaternion.identity);
+
+
+            timer = 0;
         }
     }
 }
