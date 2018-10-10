@@ -843,10 +843,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2270e840124b7fb439a8fdb461ba5df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bird: {fileID: 1148622303331486, guid: b88841e0203ec3046b7654e941132e10, type: 2}
-  coin: {fileID: 1691142240380980, guid: b64746564550656428edb031349368aa, type: 2}
+  entities:
+  - {fileID: 1148622303331486, guid: b88841e0203ec3046b7654e941132e10, type: 2}
+  - {fileID: 1691142240380980, guid: b64746564550656428edb031349368aa, type: 2}
+  - {fileID: 1119714485937916, guid: cc53ff76eef322841908ec58d8cac064, type: 2}
   player: {fileID: 1409248445}
-  shield: {fileID: 1119714485937916, guid: cc53ff76eef322841908ec58d8cac064, type: 2}
 --- !u!1 &2074637754
 GameObject:
   m_ObjectHideFlags: 0
