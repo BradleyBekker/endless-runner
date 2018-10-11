@@ -87,7 +87,6 @@ public class Player_Movement : MonoBehaviour {
         if (!crash) {
             if (transform.position.y < -3.3f)
             {
-                print("bottom barrier");
                 transform.position = new Vector2(transform.position.x, -3.31f);
             }
             if (transform.position.y > 5.3f)
