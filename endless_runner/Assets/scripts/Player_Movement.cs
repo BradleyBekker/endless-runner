@@ -9,7 +9,7 @@ public class Player_Movement : MonoBehaviour {
     [SerializeField]float score = 0;
     [SerializeField] Text scoretext;
     [SerializeField] GameObject shield;
-    private float speed = 6;
+    private float speed = 9;
     private bool crash = false;
     private bool controllable = true;
     private bool shielded = false;
@@ -36,7 +36,7 @@ public class Player_Movement : MonoBehaviour {
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "hostile")
         {
